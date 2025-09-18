@@ -44,3 +44,28 @@ datetime
 
 os
  → Gerencia caminhos e diretórios
+
+ ▶️ Como usar
+1. Instale as dependências
+pip install selenium webdriver-manager openpyxl
+
+2. Rode o script Python
+python app.py
+
+3. (Opcional) Transformar em .exe para entrega
+python -m PyInstaller --onefile --noconsole app.py
+
+
+O executável será gerado na pasta dist/.
+
+O arquivo Excel será criado na mesma pasta do .exe.
+
+🎯 Objetivo
+
+Projeto desenvolvido para automatizar a coleta de dados de imóveis, facilitando análises de preços e links de anúncios sem precisar acessar manualmente o site.
+
+📂 Saída
+
+O programa gera automaticamente o arquivo:
+
+imoveis.xlsx
