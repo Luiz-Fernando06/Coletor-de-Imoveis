@@ -1,71 +1,19 @@
-# 🏠 Coletor de Imóveis Martinelli
+# Web Scraping Automatizado de Imóveis — Martinelli Imobiliária
 
-Este projeto é um web scraper que coleta automaticamente informações de imóveis do site Imóveis Martinelli
- e salva os dados em uma planilha Excel.
+## Objetivo:
+Automatizar a coleta diária de informações de imóveis disponíveis para venda no site da Imobiliária Martinelli, registrando preços, links e data de coleta em uma planilha Excel.
 
-O programa extrai:
+## Principais etapas realizadas:
 
-💲 Preço do imóvel
+- Acesso automatizado: Utilização do Selenium WebDriver (com webdriver-manager) para abrir o site e navegar de forma controlada pelo script.
 
-🔗 Link do anúncio
+- Extração de dados: Captura automática dos preços e links de cada anúncio de imóvel na página.
 
-📅 Data da coleta
+- Registro temporal: Inclusão da data de coleta para acompanhamento histórico de preços e anúncios.
 
-Ele foi feito em Python usando Selenium e openpyxl, e pode ser empacotado como um executável (.exe) para entregar ao cliente sem necessidade de Python instalado.
+- Armazenamento estruturado: Criação e atualização automática do arquivo imoveis.xlsx, garantindo persistência e organização dos dados.
 
-⚙️ Como funciona
+- Execução contínua: O processo pode ser agendado para rodar periodicamente, permitindo análise de variações de preços e monitoramento do mercado imobiliário local.
 
-Abre a página do site de imóveis usando Selenium.
-
-Coleta preços e links de todos os anúncios disponíveis na página.
-
-Armazena os dados em uma planilha Excel (imoveis.xlsx), criando a planilha se ainda não existir.
-
-Salva a data da coleta junto com cada registro.
-
-Fecha o navegador automaticamente após a coleta.
-
-🛠 Tecnologias usadas
-
-Python
- → Linguagem principal
-
-Selenium
- → Automação do navegador
-
-webdriver-manager
- → Baixa automaticamente o ChromeDriver correto
-
-openpyxl
- → Manipulação de arquivos Excel
-
-datetime
- → Captura a data atual
-
-os
- → Gerencia caminhos e diretórios
-
- ▶️ Como usar
-1. Instale as dependências
-pip install selenium webdriver-manager openpyxl
-
-2. Rode o script Python
-python app.py
-
-3. (Opcional) Transformar em .exe para entrega
-python -m PyInstaller --onefile --noconsole app.py
-
-
-O executável será gerado na pasta dist/.
-
-O arquivo Excel será criado na mesma pasta do .exe.
-
-🎯 Objetivo
-
-Projeto desenvolvido para automatizar a coleta de dados de imóveis, facilitando análises de preços e links de anúncios sem precisar acessar manualmente o site.
-
-📂 Saída
-
-O programa gera automaticamente o arquivo:
-
-imoveis.xlsx
+## Resumo:
+Automação desenvolvida em Python + Selenium + OpenPyXL, voltada para coleta e registro inteligente de dados imobiliários, ideal para análise de mercado, acompanhamento de tendências e atualização de preços em tempo real.
